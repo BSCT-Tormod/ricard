@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais ou et donc mon Ricard ?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <div class="canva">
+            <div class="level--1">
+                Cliquez sur le Ricard pour commencer
+                <img src="./images/ricard.png" alt="-1" onclick="levelUp()">
+            </div>
+            <div class="level-0">
+                <img src="./images/0.png" alt="0">
+                <div class="target" id="target-level-0" onclick="levelUp()"></div>
+            </div>
+            <div class="level-1">
+                <img src="./images/1.png" alt="1">
+                <div class="target" id="target-level-1" onclick="levelUp()"></div>
+            </div>
+            <div class="level-2">
+                <img src="./images/2.png" alt="2">
+                <div class="target" id="target-level-2" onclick="levelUp()"></div>
+            </div>
+            <div class="level-3">
+                <img src="./images/3.png" alt="3">
+                <div class="target" id="target-level-3" onclick="levelUp()"></div>
+            </div>
+            <div class="level-4">
+                <img src="./images/4.png" alt="4">
+                <div class="target" id="target-level-4" onclick="levelUp()"></div>
+            </div>
+            <div class="level-5">
+                <img src="./images/5.png" alt="5">
+                <div class="target" id="target-level-5" onclick="levelUp()"></div>
+            </div>
+            <div class="level-6">
+                <img src="./images/6.png" alt="6">
+                <div class="target" id="target-level-6" onclick="levelUp()"></div>
+            </div>
+            <div class="level-7">
+                <img src="./images/7.png" alt="7">
+                <div class="target" id="target-level-7" onclick="levelUp()"></div>
+            </div>
+            <div class="level-8">
+                <img src="./images/8.png" alt="8">
+                <div class="target" id="target-level-8" onclick="levelUp()"></div>
+            </div>
+        </div>
+        <div class="pannel">
+            <div class="header">
+                <h1>Mais ou et donc mon Ricard ? (Normal - Any %)</h1>
+            </div>
+            <div class="sections-container">
+                <div class="section" id="sec-0">
+                    <h2>Piédestal</h2>
+                    <p id="d-sec-0"></p>
+                    <p id="t-sec-0">0.00</p>
+                </div>
+                <div class="section" id="sec-1">
+                    <h2>Bar</h2>
+                    <p id="d-sec-1"></p>
+                    <p id="t-sec-1">0.00</p>
+                </div>
+                <div class="section" id="sec-2">
+                    <h2>Aéroport</h2>
+                    <p id="d-sec-2"></p>
+                    <p id="t-sec-2">0.00</p>
+                </div>
+                <div class="section" id="sec-3">
+                    <h2>TEDx Talk</h2>
+                    <p id="d-sec-3"></p>
+                    <p id="t-sec-3">0.00</p>
+                </div>
+                <div class="section" id="sec-4">
+                    <h2>Touloude</h2>
+                    <p id="d-sec-4"></p>
+                    <p id="t-sec-4">0.00</p>
+                </div>
+                <div class="section" id="sec-5">
+                    <h2>Piscine</h2>
+                    <p id="d-sec-5"></p>
+                    <p id="t-sec-5">0.00</p>
+                </div>
+                <div class="section" id="sec-6">
+                    <h2>Supermarché</h2>
+                    <p id="d-sec-6"></p>
+                    <p id="t-sec-6">0.00</p>
+                </div>
+                <div class="section" id="sec-7">
+                    <h2>Labo de meth</h2>
+                    <p id="d-sec-7"></p>
+                    <p id="t-sec-7">0.00</p>
+                </div>
+                <div class="section" id="sec-8">
+                    <h2>La maison de Tobiasz</h2>
+                    <p id="d-sec-8"></p>
+                    <p id="t-sec-8">0.00</p>
+                </div>
+            </div>
+            <div class="score">
+                <p><output id="display-area">0.00</output></p>
+                <p id="delta"></p>
+            </div>
+            <div class="temps">
+                <p id="pb"></p>
+                <p id="tmin"></p>
+            </div>
+            <!-- <button onclick="deleteCookie()">reset</button> -->
+            <p onclick="location.reload()" id="encore">Rejouer</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
